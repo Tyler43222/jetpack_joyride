@@ -1,0 +1,51 @@
+# --- Java build artifacts ---
+*.class
+*.jar
+*.war
+*.ear
+*.jmod
+hs_err_pid*
+replay_pid*
+
+# Common build output folders
+bin/
+out/
+build/
+dist/
+target/
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / editor settings ---
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/
+
+# IntelliJ
+*.iws
+
+# Temporary / logs
+*.log
+*.tmp
+*.swp
+*~
+
+# --- Project-specific ---
+# Backup/old copies not needed to run the game
+Archive 2/
+
+# Keep runtime assets checked in
+!assets/
+!media_files/
