@@ -1,3 +1,5 @@
+package entities;
+
 //Collects are entities that the player wants to collide with, as they increase
 //their score.
 public class Collect extends Entity implements CollisionReactive, AutoScroller {

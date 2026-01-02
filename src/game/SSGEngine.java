@@ -1,35 +1,14 @@
+package game;
+
 import java.awt.Color;
 import java.awt.event.*;
 import java.util.*;
+import entities.*;
 
-//Abstract class which handles the fundamental properties and actions
-//for a Scrolling game.
-
-
-//************************************************************************************
-//*                                                                                  *
-//*                                                                                  *
-//*                    YOU ARE NOT ALLOWED TO MODIFY THIS CLASS                      *
-//*         (though you'll need to read, trace, and use the methods in it)           *
-//*                                                                                  *
-//*                                                                                  *
-//************************************************************************************
-
-
-
+//Abstract class which handles the fundamental properties and actions for a Scrolling game.
 public abstract class SSGEngine {
     
-    
     //********        KEYBOARD KEY VALES      ******** 
-    
-    //The Java API stores the values for various keys on the keyboard
-    //as integer values.  These values are used by the keyPress methods
-    //in order to determine which key(s) the player has pressed.  The KeyEvent
-    //class stores a large collection of finals for all the different keys.
-    
-    //See the following API page for more info:
-    //https://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html
-    
     public static final int KEY_QUIT_GAME = KeyEvent.VK_ESCAPE;//quit the game
     public static final int KEY_PAUSE_GAME = KeyEvent.VK_P;//pause the game
     public static final int KEY_TOGGLE_DEBUG = KeyEvent.VK_D;//toggle debug mode on/off  
@@ -70,7 +49,6 @@ public abstract class SSGEngine {
     //Entities are drawn in order of appearance in the DisplayList.
     //First element is drawn underneath all entities, last element ontop of all entities.
     protected DisplayList toDraw = new DisplayList();
-    
     
     
     //determines if the game should pause while a splash screen is displayed.
@@ -138,8 +116,6 @@ public abstract class SSGEngine {
         }                
     }    
     
-   
-    
     
     //Handles reacting to any keyboard keys the player has pressed on the keyboard 
     //and/or mouse clicks.
@@ -155,8 +131,6 @@ public abstract class SSGEngine {
         if (click != null)
             reactToMouseClick(click);
     }
-    
-    
     
     
     //Returns the width of the game window, in pixels
@@ -279,9 +253,7 @@ public abstract class SSGEngine {
         window.setUniversalSpeed(newGameSpeed);
     }
     
-    
-    
-    
+
     //******** Abstract methods to be implemented by child classes ******** 
     
     //called on each "tick" (if not paused) to update the state of the game
@@ -303,6 +275,5 @@ public abstract class SSGEngine {
     //Handles reacting to a single mouse click in the game window
     protected abstract MouseEvent reactToMouseClick(MouseEvent click);    
     
-    //********************************************************************* 
-    
+    //*********************************************************************  
 }

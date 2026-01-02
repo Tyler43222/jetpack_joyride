@@ -1,3 +1,5 @@
+package entities;
+
 //A SpecialAvoid is a rare kind of Avoid that spawns more infrequently than the regular Avoid
 //When collided with, SpecialAvoids lower the Player's HP by the same amount as a standard Avoid,
 //but also decrease the Player's score.  Otherwise, behaves the same as a regular Avoid

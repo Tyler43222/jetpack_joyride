@@ -1,3 +1,5 @@
+package entities;
+
 //Avoids are entities the player needs to avoid colliding with.
 //If a player collides with an avoid, it reduces the players Hit Points (HP).
 public class Avoid extends Entity implements CollisionReactive, AutoScroller {

@@ -1,4 +1,4 @@
-
+package entities;
 
 public class TylerSpecialAvoid extends SpecialAvoid{
 

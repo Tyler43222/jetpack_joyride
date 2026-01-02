@@ -1,4 +1,7 @@
+package game;
+
 import java.util.ArrayList;
+import entities.*;
 
 //A collection of Entities to be drawn in the game window
 public class DisplayList{

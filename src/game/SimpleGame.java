@@ -1,6 +1,9 @@
+package game;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import entities.*;
 
 //A Simple version of the scrolling game, featuring Avoids, Collects, SpecialAvoids, and SpecialCollects
 //Players must reach a score threshold to win.

@@ -1,3 +1,5 @@
+package entities;
+
 //The entity that the human player controls in the game window
 //The player moves in reaction to player input
 public class Player extends Entity {

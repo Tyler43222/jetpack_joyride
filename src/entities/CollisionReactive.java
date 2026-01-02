@@ -1,4 +1,5 @@
-//Interface to be implemented by any Entities which affect the player upon collision
+package entities;
+
 //CollisionReactive means that the player's HP and/or Score values are modified
 //when they collide with this Entity
 public interface CollisionReactive {

@@ -1,3 +1,6 @@
+package game;
+
+import entities.*;
 
 
 public class statusBar extends Entity{

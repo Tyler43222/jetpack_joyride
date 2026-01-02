@@ -1,6 +1,9 @@
+package game;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+import entities.*;
 
 public class TylerGame extends SimpleGame {
 

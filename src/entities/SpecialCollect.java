@@ -1,3 +1,5 @@
+package entities;
+
 //A SpecialCollect is a rare kind of Collect that spawns more infrequently than the regular Collect
 //When collided with, SpecialCollects increase the Player's score by the same amount as a standard Collect,
 //but also increase the Player's HP.  Otherwise, behaves the same as a regular Collect.

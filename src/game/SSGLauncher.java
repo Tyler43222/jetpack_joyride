@@ -1,3 +1,5 @@
+package game;
+
 //Contains main... run me to launch the game!
 public class SSGLauncher{
     

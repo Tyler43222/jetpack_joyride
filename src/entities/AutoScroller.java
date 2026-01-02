@@ -1,4 +1,5 @@
-//Interface to be implemented by any Entities which are "AutoScroller"
+package entities;
+
 //AutoScroller means the implementing Entity is moved by their respective
 //scroll speed each time the game updates.
 //Scrolling happens at a regular interval so long as the game is being played.

@@ -1,48 +1,17 @@
+package game;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.geom.*;
 import javax.swing.*;
 import java.util.*;
 import java.net.URL;
+import entities.*;
 
 
 //Handles drawing the game window and all of the graphics inside of it
 //Also has the code to capture key presses/mouse clicks by the player
 //Which ultimately are retrieved and reacted to by SSGEngine/SimpleGame classes
-
-
-
-
-
-
-
-
-
-
-
-
-//************************************************************************************
-//*                                                                                  *
-//*                                                                                  *
-//*                    YOU ARE NOT ALLOWED TO MODIFY THIS CLASS                      *
-//*           YOU ALSO DON'T NEED TO READ/TRACE/CALL ANY METHODS IN HERE             *
-//*         (But feel free to take a look if you're feeling extra curious!)          *
-//*                                                                                  *
-//*                                                                                  *
-//************************************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class Window extends JComponent implements KeyListener, MouseListener{
     
     
@@ -116,11 +85,6 @@ public class Window extends JComponent implements KeyListener, MouseListener{
     //tracks if the window is currently painting, forcing the game logic to wait
     private static boolean isFetchingKeys;
 
-  
-    
-    
-    
-    
     
     public Window(int windowWidth, int windowHeight, DisplayList toDraw){
         this.toDraw = toDraw; //Link this toDraw to the respective SSGEngine
@@ -510,7 +474,9 @@ public class Window extends JComponent implements KeyListener, MouseListener{
         if (filename == null)
             return null;
         //need to use URL to allow for animated gifs to animate properly
-        URL imageResource = Window.class.getResource(filename);
+        // Add leading slash to make path absolute from classpath root
+        String resourcePath = filename.startsWith("/") ? filename : "/" + filename;
+        URL imageResource = Window.class.getResource(resourcePath);
         if (imageResource == null){
             System.err.println("Unable to read image file: " + filename); 
             return null;
@@ -524,20 +490,11 @@ public class Window extends JComponent implements KeyListener, MouseListener{
     }
     
     
-    
-    
-    
-    
-    
-    
-    
     //These functions are required by various interfaces, but are not used
     public void mouseReleased(MouseEvent event) { }
     public void mouseClicked(MouseEvent event) { }
     public void mouseEntered(MouseEvent event) { }
     public void mouseExited(MouseEvent event) { }
     public void mouseMoved(MouseEvent event) { }
-    public void keyTyped(KeyEvent event) {}    
-    
-    
+    public void keyTyped(KeyEvent event) {}     
 }

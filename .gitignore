@@ -49,3 +49,4 @@ Archive 2/
 # Keep runtime assets checked in
 !assets/
 !media_files/
+!src/**
