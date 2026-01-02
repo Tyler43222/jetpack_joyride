@@ -1,4 +1,6 @@
-This game is the final project for my data structures & algorithms class and is based on the popular mobile game Jetpack Joyride.
+This game is the final project for my data structures & algorithms class and is based on the popular mobile game Jetpack Joyride. 
+
+I implemented a complete game engine featuring inheritance hierarchies, interface-based polymorphism, collision detection, event-driven input handling, entity spawning/garbage collection, and a custom DisplayList rendering system, demonstrating core OOP principles (inheritance, polymorphism, encapsulation, abstraction) and game development practices.
 
 ## Game details
 
@@ -19,9 +21,9 @@ This game is the final project for my data structures & algorithms class and is 
 
 From the project folder:
 ```
-javac *.java
+javac -d bin src/entities/*.java src/game/*.java
 
-java SSGLauncher
+java -cp .:bin game.SSGLauncher
 ```
 
 
